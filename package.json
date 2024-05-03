@@ -1,0 +1,11 @@
+{
+  "name": "@meltdownjs",
+  "private": "true",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "publish": "bunx workspaces-publish --token $NPM_TOKEN"
+  }
+}

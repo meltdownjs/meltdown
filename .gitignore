@@ -1,0 +1,8 @@
+# IntelliJ based IDEs
+.idea
+
+# Finder (MacOS) folder config
+.DS_Store
+
+# Dependency directories
+node_modules/

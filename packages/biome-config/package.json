@@ -1,0 +1,18 @@
+{
+  "name": "@meltdownjs/biome-config",
+  "type": "module",
+  "main": "biome.json",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./biome.json"
+  },
+  "files": [
+    "biome.json"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.2"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "^1.7.2"
+  }
+}

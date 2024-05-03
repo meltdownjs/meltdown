@@ -1,0 +1,20 @@
+{
+	"name": "Bun",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"oven.bun-vscode",
+				"bradlc.vscode-tailwindcss",
+				"biomejs.biome",
+				"ms-vsliveshare.vsliveshare",
+				"Codeium.codeium",
+				"naumovs.color-highlight",
+				"TomRijndorp.find-it-faster",
+				"brumm.narrow"
+			]
+		}
+	}
+}
