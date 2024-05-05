@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+  
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Release Please
+        id: release
+        uses: google-github-actions/release-please-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+      - name: Checkout
+        uses: actions/checkout@v4
+        if: steps.release.outputs.releases_created == 'true'
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
+        if: steps.release.outputs.releases_created == 'true'
+      - name: Install
+        run: bun install
+        if: steps.release.outputs.releases_created == 'true'
+      - name: Build all packages
+        run: bun --filter '*' build
+        continue-on-error: true
+        if: steps.release.outputs.releases_created == 'true'
+      - name: Publish to npm
+        run: bun run publish
+        if: steps.release.outputs.releases_created == 'true'
+        env:
+          NPM_TOKEN: ${{ secrets.NpmToken }}
