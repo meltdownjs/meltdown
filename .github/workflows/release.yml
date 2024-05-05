@@ -28,6 +28,10 @@ jobs:
       - name: Install
         run: bun install
         if: steps.release.outputs.releases_created == 'true'
+      - name: Build all packages
+        run: bun --filter '*' build
+        continue-on-error: true
+        if: steps.release.outputs.releases_created == 'true'
       - name: Publish to npm
         run: bun run publish
         if: steps.release.outputs.releases_created == 'true'
