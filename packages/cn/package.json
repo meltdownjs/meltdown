@@ -1,7 +1,7 @@
 {
   "name": "@meltdownjs/cn",
   "homepage": "https://github.com/meltdownjs/meltdown",
-  "description":"`@meltdownjs/cn` is a utility function for combining multiple CSS class names into a single string while also resolving any conflicting classes.",
+  "description": "`@meltdownjs/cn` is a utility function for combining multiple CSS class names into a single string while also resolving any conflicting classes.",
   "keywords": ["tailwind", "classnames", "utility", "css", "styling", "ui", "clsx", "tailwind-merge", "twMerge"],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,21 +10,19 @@
     "type": "git",
     "url": "https://github.com/meltdownjs/meltdown.git"
   },
-  "bugs":{
-"url": "https://github.com/meltdownjs/meltdown/issues"
+  "bugs": {
+    "url": "https://github.com/meltdownjs/meltdown/issues"
   },
   "exports": {
-    "*":{
-        "types": "./dist/index.d.ts",
-        "require": "./dist/index.js",
-        "import": "./dist/index.js"
+    "*": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
     }
-},
-  "scripts": {
-    "build": "bun build.ts"
   },
-  "devDependencies": {
-    "@types/bun": "latest"
+  "scripts": {
+    "build": "bun build.ts",
+    "test": "bun test"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
