@@ -1,0 +1,39 @@
+{
+  "name": "@meltdown/use-intersection-observer",
+  "version": "1.0.0",
+  "description": "Intersection observer react hook",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meltdownjs/meltdown.git#main"
+  },
+  "keywords": [
+    "intersection",
+    "intersection-observer",
+    "observer",
+    "react",
+    "react-hook",
+    "typescript",
+    "hook"
+  ],
+  "author": "Pascal Rogalla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meltdownjs/meltdown/issues"
+  },
+  "homepage": "https://github.com/meltdownjs/meltdown/tree/main#readme",
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^16.0.0"
+  },
+  "dependencies": {
+    "react": "^16.0.0"
+  }
+}
