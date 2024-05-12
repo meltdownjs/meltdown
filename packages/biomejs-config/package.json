@@ -6,7 +6,9 @@
   "exports": {
     ".": "./biome.json"
   },
-  "files": ["biome.json"],
+  "files": [
+    "biome.json"
+  ],
   "devDependencies": {
     "@biomejs/biome": "^1.7.2"
   },
