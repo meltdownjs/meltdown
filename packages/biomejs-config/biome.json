@@ -86,10 +86,7 @@
         "useValidTypeof": "error"
       }
     },
-    "ignore": [
-      "dist",
-      ".eslintrc.cjs"
-    ]
+    "ignore": ["dist", ".eslintrc.cjs"]
   },
   "javascript": {
     "formatter": {
@@ -106,12 +103,7 @@
   },
   "overrides": [
     {
-      "include": [
-        "*.ts",
-        "*.tsx",
-        "*.mts",
-        "*.cts"
-      ],
+      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
       "linter": {
         "rules": {
           "correctness": {

@@ -1,0 +1,51 @@
+{
+  "name": "@meltdownjs/cn",
+  "homepage": "https://github.com/meltdownjs/meltdown",
+  "description": "`@meltdownjs/cn` is a utility function for combining multiple CSS class names into a single string while also resolving any conflicting classes.",
+  "keywords": [
+    "tailwind",
+    "classnames",
+    "utility",
+    "css",
+    "styling",
+    "ui",
+    "clsx",
+    "tailwind-merge",
+    "twMerge"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meltdownjs/meltdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meltdownjs/meltdown/issues"
+  },
+  "exports": {
+    "*": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "bun build.ts",
+    "lint": "biome lint ./src",
+    "test": "bun test",
+    "format": "biome format --write ."
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@meltdownjs/biomejs-config": "workspace:*",
+    "@biomejs/biome": "^1.7.2",
+    "@types/bun": "latest"
+  }
+}
