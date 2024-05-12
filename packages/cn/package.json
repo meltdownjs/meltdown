@@ -47,5 +47,6 @@
     "@meltdownjs/biomejs-config": "workspace:*",
     "@biomejs/biome": "^1.7.2",
     "@types/bun": "latest"
-  }
+  },
+  "version": "1.0.0"
 }
