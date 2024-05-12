@@ -1,5 +1,5 @@
-import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 
 /**
  * Combines multiple className strings together,
@@ -23,6 +23,6 @@ import { twMerge } from "tailwind-merge";
  * @see {@link https://github.com/dcastil/tailwind-merge} for more information on `twMerge`.
  * @see {@link https://github.com/dcastil/tailwind-merge/discussions/137#discussioncomment-3482513} for more information on `twMerge`-Creators suggestion.
  */
-const cn = (...args: ClassValue[]) => twMerge(clsx(args));
+const cn = (...args: ClassValue[]) => twMerge(clsx(args))
 
-export default cn;
+export default cn
