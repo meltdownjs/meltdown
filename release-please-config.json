@@ -5,6 +5,7 @@
     "packages/biomejs-config": {
       "extra-files": ["biome.json"]
     },
-    "packages/cn": {}
+    "packages/cn": {},
+    "packages/droppy": {}
   }
 }
