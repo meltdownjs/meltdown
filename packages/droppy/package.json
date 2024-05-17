@@ -8,9 +8,11 @@
   "bugs": {
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     "*": {
       "types": "./dist/index.d.ts",
