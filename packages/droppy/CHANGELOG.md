@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/meltdownjs/meltdown/compare/droppy-v1.0.0...droppy-v1.0.1) (2024-05-18)
+
+
+### Bug Fixes
+
+* remove typo in package.json ([#16](https://github.com/meltdownjs/meltdown/issues/16)) ([a10e084](https://github.com/meltdownjs/meltdown/commit/a10e0843aa88a1673914538d0660d440f34cd262))
+
 ## 1.0.0 (2024-05-17)
 
 
