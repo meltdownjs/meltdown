@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/meltdownjs/meltdown/compare/cn-v1.1.0...cn-v1.1.1) (2024-05-21)
+
+
+### Bug Fixes
+
+* Add missing `files` field in package.json ([#23](https://github.com/meltdownjs/meltdown/issues/23)) ([8f9de4b](https://github.com/meltdownjs/meltdown/commit/8f9de4b0ca18da6d1c7e8b2af27768d239398699))
+
 ## [1.1.0](https://github.com/meltdownjs/meltdown/compare/cn-v1.0.1...cn-v1.1.0) (2024-05-21)
 
 
