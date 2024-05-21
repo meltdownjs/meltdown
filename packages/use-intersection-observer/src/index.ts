@@ -1,50 +1,54 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from 'react'
+import type {
+  UseIntersectionObserverArgs,
+  UseIntersectionObserverReturn,
+} from './types'
 
-type useIntersectionObserverProps = {
-  root: any;
-  target: any;
-  onIntersect: () => void;
-  threshold?: number;
-  rootMargin?: string;
-  enabled?: boolean;
-};
-
-const useIntersectionObserver = ({
-  root,
-  target,
+const useIntersectionObserver = <
+  TRoot extends HTMLElement,
+  TTarget extends HTMLElement,
+>({
   onIntersect,
   threshold = 1.0,
-  rootMargin = "1px",
+  rootMargin = '1px',
   enabled = true,
-}: useIntersectionObserverProps) => {
+}: UseIntersectionObserverArgs): UseIntersectionObserverReturn<
+  TRoot,
+  TTarget
+> => {
+  const rootRef = useRef<TRoot>(null)
+  const targetRef = useRef<TTarget>(null)
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     if (!enabled) {
-      return;
+      return
     }
 
     const observer = new IntersectionObserver(
       (entries) =>
         entries.forEach((entry) => entry.isIntersecting && onIntersect()),
       {
-        root: root && root.current,
+        root: rootRef && rootRef.current,
         rootMargin,
         threshold,
       }
-    );
+    )
 
-    const el = target && target.current;
+    const el = targetRef && targetRef.current
 
     if (!el) {
-      return;
+      return
     }
 
-    observer.observe(el);
+    observer.observe(el)
 
     return () => {
-      observer.unobserve(el);
-    };
+      observer.unobserve(el)
+    }
     // eslint-disable-next-line
-  }, [target.current, enabled]);
-};
+  }, [targetRef.current, enabled])
 
-export default useIntersectionObserver;
+  return { rootRef, targetRef }
+}
+
+export default useIntersectionObserver
