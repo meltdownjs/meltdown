@@ -6,6 +6,7 @@
       "extra-files": ["biome.json"]
     },
     "packages/cn": {},
-    "packages/droppy": {}
+    "packages/droppy": {},
+    "packages/use-intersection-observer": {}
   }
 }
