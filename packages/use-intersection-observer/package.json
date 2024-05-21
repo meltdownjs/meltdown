@@ -1,8 +1,8 @@
 {
+  "name": "@meltdown/use-intersection-observer",
   "author": "Pascal Rogalla",
   "license": "MIT",
-  "name": "@meltdown/use-intersection-observer",
-  "homepage": "https://github.com/meltdownjs/meltdown/tree/main#readme",
+  "homepage": "https://github.com/meltdownjs/meltdown/tree/main/packages/use-intersection-observer",
   "version": "1.0.0",
   "description": "Intersection observer react hook",
   "keywords": [
@@ -14,8 +14,6 @@
     "typescript",
     "hook"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
@@ -24,22 +22,28 @@
   "bugs": {
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
+  "files": ["dist"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "*": {
+    ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     }
   },
   "scripts": {
-    "build": "bun build.ts",
-    "test": "bun test"
+    "build": "bun --bunx vite build",
+    "lint": "biome lint ./src",
+    "test": "bun test",
+    "format": "biome format --write ."
   },
   "peerDependencies": {
-    "typescript": "^5.0.0",
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "typescript": "^5.2.2",
     "@types/bun": "latest",
     "@types/react": "^16.0.0"
   },
