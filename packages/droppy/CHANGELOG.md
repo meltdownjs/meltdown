@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/meltdownjs/meltdown/compare/droppy-v1.0.1...droppy-v1.1.0) (2024-05-21)
+
+
+### Features
+
+* provide helper functions ([#20](https://github.com/meltdownjs/meltdown/issues/20)) ([bd0e345](https://github.com/meltdownjs/meltdown/commit/bd0e34525161aeb1c6ee3d8d6f37d607a0a8c16f))
+
 ## [1.0.1](https://github.com/meltdownjs/meltdown/compare/droppy-v1.0.0...droppy-v1.0.1) (2024-05-18)
 
 
