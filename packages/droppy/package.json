@@ -8,19 +8,20 @@
   "bugs": {
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
   "exports": {
-    "*": {
+    ".": {
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     }
   },
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "bunx --bun vite",
