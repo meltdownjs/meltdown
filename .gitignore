@@ -7,4 +7,5 @@
 # Dependency directories
 node_modules/
 
-packages/*/dist/
+# Dist folder of all packages
+packages/*/dist
