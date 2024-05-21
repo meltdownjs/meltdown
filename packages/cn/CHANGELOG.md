@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/meltdownjs/meltdown/compare/cn-v1.0.1...cn-v1.1.0) (2024-05-21)
+
+
+### Features
+
+* use `Vite` instead of `Bun.build` ([#21](https://github.com/meltdownjs/meltdown/issues/21)) ([bed856f](https://github.com/meltdownjs/meltdown/commit/bed856f9c9b3150b58dc7b7f7d7557b3bbd09331))
+
 ## [1.0.1](https://github.com/meltdownjs/meltdown/compare/cn-v1.0.0...cn-v1.0.1) (2024-05-21)
 
 
