@@ -21,22 +21,21 @@
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
   "type": "module",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     }
   },
   "scripts": {
-    "build": "bun build.ts",
+    "build": "bun --bunx vite build",
     "lint": "biome lint ./src",
     "test": "bun test",
     "format": "biome format --write ."
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -45,7 +44,10 @@
   "devDependencies": {
     "@meltdownjs/biomejs-config": "workspace:*",
     "@biomejs/biome": "^1.7.2",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1"
   },
   "version": "1.0.1"
 }
