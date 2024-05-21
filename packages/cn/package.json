@@ -1,6 +1,6 @@
 {
   "name": "@meltdownjs/cn",
-  "homepage": "https://github.com/meltdownjs/meltdown",
+  "homepage": "https://github.com/meltdownjs/meltdown/tree/main/packages/cn",
   "description": "`@meltdownjs/cn` is a utility function for combining multiple CSS class names into a single string while also resolving any conflicting classes.",
   "keywords": [
     "tailwind",
@@ -13,9 +13,6 @@
     "tailwind-merge",
     "twMerge"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/meltdownjs/meltdown.git"
@@ -23,10 +20,12 @@
   "bugs": {
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    "*": {
+    ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
       "import": "./dist/index.js"
     }
   },
