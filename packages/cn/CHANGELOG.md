@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/meltdownjs/meltdown/compare/cn-v1.0.0...cn-v1.0.1) (2024-05-21)
+
+
+### Bug Fixes
+
+* remove typo in package.json ([#18](https://github.com/meltdownjs/meltdown/issues/18)) ([d57a709](https://github.com/meltdownjs/meltdown/commit/d57a709072bf25839a4826a9893102436ce50e57))
+
 ## 1.0.0 (2024-05-12)
 
 
