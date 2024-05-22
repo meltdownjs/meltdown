@@ -1,5 +1,5 @@
 {
-  "name": "@meltdown/use-intersection-observer",
+  "name": "@meltdownjs/use-intersection-observer",
   "author": "Pascal Rogalla",
   "license": "MIT",
   "homepage": "https://github.com/meltdownjs/meltdown/tree/main/packages/use-intersection-observer",
@@ -22,9 +22,7 @@
   "bugs": {
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",

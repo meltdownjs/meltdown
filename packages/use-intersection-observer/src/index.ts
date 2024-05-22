@@ -7,18 +7,19 @@ import type {
 const useIntersectionObserver = <
   TRoot extends HTMLElement,
   TTarget extends HTMLElement,
->({
-  onIntersect,
-  threshold = 1.0,
-  rootMargin = '1px',
-  enabled = true,
-}: UseIntersectionObserverArgs): UseIntersectionObserverReturn<
-  TRoot,
-  TTarget
-> => {
+>(
+  args: UseIntersectionObserverArgs
+): UseIntersectionObserverReturn<TRoot, TTarget> => {
+  const {
+    onIntersect,
+    threshold = 1.0,
+    rootMargin = '1px',
+    enabled = true,
+  } = args
   const rootRef = useRef<TRoot>(null)
   const targetRef = useRef<TTarget>(null)
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: onIntersect, threshold & rootMargin are to be neglected. Do not tend to change at runtime.
   useEffect(() => {
     if (!enabled) {
       return
@@ -45,8 +46,7 @@ const useIntersectionObserver = <
     return () => {
       observer.unobserve(el)
     }
-    // eslint-disable-next-line
-  }, [targetRef.current, enabled])
+  }, [rootRef.current, targetRef.current, enabled])
 
   return { rootRef, targetRef }
 }
