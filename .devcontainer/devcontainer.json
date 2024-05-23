@@ -1,27 +1,47 @@
 {
-	"name": "Bun",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"oven.bun-vscode",
-				"bradlc.vscode-tailwindcss",
-				"biomejs.biome",
-				"ms-vsliveshare.vsliveshare",
-				"Codeium.codeium",
-				"naumovs.color-highlight",
-				"TomRijndorp.find-it-faster",
-				"brumm.narrow"
-			],
-			"settings": {
-				"editor.defaultFormatter": "biomejs.biome",
-				"editor.codeActionsOnSave": {
-					"quickfix.biome": "explicit",
-					"source.organizeImports.biome": "explicit"
-				}
-			}
-		}
-	}
+  "name": "Bun",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "oven.bun-vscode",
+        "bradlc.vscode-tailwindcss",
+        "biomejs.biome",
+        "ms-vsliveshare.vsliveshare",
+        "Codeium.codeium",
+        "naumovs.color-highlight",
+        "TomRijndorp.find-it-faster",
+        "brumm.narrow",
+        "eamodio.gitlens",
+        "vitest.explorer"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.codeActionsOnSave": {
+          "quickfix.biome": "explicit",
+          "source.organizeImports.biome": "explicit"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[javascriptreact]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        }
+      }
+    }
+  }
 }
