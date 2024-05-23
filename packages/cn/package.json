@@ -1,7 +1,7 @@
 {
   "name": "@meltdownjs/cn",
   "homepage": "https://github.com/meltdownjs/meltdown/tree/main/packages/cn",
-  "description": "`@meltdownjs/cn` is a utility function for combining multiple CSS class names into a single string while also resolving any conflicting classes.",
+  "description": "@meltdownjs/cn is a utility function for combining multiple CSS class names into a single string while also resolving any conflicting classes.",
   "keywords": [
     "tailwind",
     "classnames",
@@ -21,9 +21,7 @@
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
   "type": "module",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -36,9 +34,10 @@
   },
   "scripts": {
     "build": "bun --bunx vite build",
-    "lint": "biome lint ./src",
+    "lint": "bun --bunx biome lint ./src",
     "test": "bun test",
-    "format": "biome format --write ."
+    "format": "bun --bunx biome format --write .",
+    "check": "bun --bunx biome check ."
   },
   "dependencies": {
     "clsx": "^2.1.1",
