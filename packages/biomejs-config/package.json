@@ -1,5 +1,23 @@
 {
   "name": "@meltdownjs/biomejs-config",
+  "description": "Shared biome-config for React projects.",
+  "homepage": "https://github.com/meltdownjs/meltdown/tree/main/packages/biomejs-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meltdownjs/meltdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meltdownjs/meltdown/issues"
+  },
+  "keywords": [
+    "biome",
+    "biomejs",
+    "config",
+    "configuration",
+    "formatter",
+    "linter",
+    "react"
+  ],
   "type": "module",
   "main": "biome.json",
   "version": "1.0.0",
@@ -14,6 +32,7 @@
     "@biomejs/biome": "^1.7.2"
   },
   "scripts": {
-    "format": "biome format --write ."
+    "format": "bun --bunx biome format --write .",
+    "check": "bun --bunx biome check ."
   }
 }

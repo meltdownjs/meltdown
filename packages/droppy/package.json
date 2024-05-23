@@ -1,5 +1,29 @@
 {
   "name": "@meltdownjs/droppy",
+  "description": "@meltdownjs/droppy is a react library which provides hooks for creating virtualized Select-, MultiSelect-, ComboBox- & MultiComboBox-Components easily.",
+  "keywords": [
+    "react",
+    "hooks",
+    "dropdown",
+    "select",
+    "multiselect",
+    "combobox",
+    "multicombobox",
+    "virtualization",
+    "virtualized",
+    "dropdown-list",
+    "react-query",
+    "infinite-scroll",
+    "api-data",
+    "floating-ui",
+    "TanStack",
+    "frontend",
+    "components",
+    "pagination",
+    "search",
+    "debounce",
+    "dropdown-menu"
+  ],
   "homepage": "https://github.com/meltdownjs/meltdown/tree/main/packages/droppy",
   "repository": {
     "type": "git",
@@ -10,9 +34,7 @@
   },
   "version": "1.1.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -28,6 +50,7 @@
     "build": "bunx --bun vite build --config ./vite.config.ts",
     "lint": "bunx --bun biome lint ./src",
     "format": "bunx --bun biome format --write .",
+    "check": "bun --bunx biome check .",
     "test": "vitest --run"
   },
   "dependencies": {

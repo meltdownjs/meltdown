@@ -1,0 +1,2 @@
+bun --filter "*" check
+bun --filter "*" test
