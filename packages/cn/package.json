@@ -37,7 +37,7 @@
   "scripts": {
     "build": "bun --bunx vite build",
     "lint": "biome lint ./src",
-    "test": "bun test",
+    "test": "vitest --run",
     "format": "biome format --write ."
   },
   "dependencies": {
