@@ -27,17 +27,11 @@ let twMerge: ((...classLists: ClassNameValue[]) => string) | undefined = undefin
  * @see {@link https://github.com/dcastil/tailwind-merge} for more information on `twMerge`.
  * @see {@link https://github.com/dcastil/tailwind-merge/discussions/137#discussioncomment-3482513} for more information on `twMerge`-Creators suggestion.
  */
-export const cn = (...args: ClassValue[]) => {
+const cn = (...args: ClassValue[]) => {
     if (twMerge !== undefined) {
         return twMerge(clsx(args))
     }
 
-    twMerge = createTwMerge()
-
-    return twMerge(clsx(args))
-}
-
-const createTwMerge = () => {
     try {
         if (!fs.existsSync(`${process.cwd()}/cn.config.json`)) {
             throw new Error('Config file does not exists')
@@ -46,16 +40,16 @@ const createTwMerge = () => {
         const cnJson = fs.readFileSync(`${process.cwd()}/cn.config.json`)
         const cnConfig = JSON.parse(cnJson.toString())
 
-        return createTailwindMerge(() => {
+        twMerge = createTailwindMerge(() => {
             const defaultConfig  = getDefaultConfig()
 
             return {...defaultConfig, ...cnConfig}
         })
     } catch {
-        return createTailwindMerge(getDefaultConfig)
+        twMerge = createTailwindMerge(getDefaultConfig)
     }
+
+    return twMerge(clsx(args))
 }
 
-export const reinitialize = () => {
-    twMerge = createTwMerge()
-}
+export default cn
