@@ -20,7 +20,7 @@ bun add @meltdownjs/cn
 
 ## Usage
 
-`@meltdownjs/cn` works similarly to `clsx`, allowing you to pass in an array of class names as arguments. It then merges these class names into a single string, resolving any conflicts using `tailwind-merge`.
+`@meltdownjs/cn` works similarly to `clsx`, allowing you to pass in an array of class names as arguments. It then merges these class names into a single string, resolving any conflicts using `tailwind-merge`. If you're using Tailwind CSS without any extra config, you can use `@meltdownjs/cn` right away. Otherwise, add a configuration file `cn.config.json` to your project. For more information jump to the configuration section.
 
 These examples illustrate different ways you can use @meltdownjs/cn to manage CSS classes in your application.
 
@@ -110,6 +110,32 @@ Combines multiple CSS class names into a single string.
 #### Returns
 - `string` - A single string containing all the merged class names.
 
+## Configuration
+
+```json
+{
+  // ↓ Set how many values should be stored in cache.
+  "cacheSize": 500,
+  // ↓ Optional prefix from Tailwind config
+  "prefix": "tw",
+  "theme": {
+    // Theme scales are defined here
+  },
+  "classGroups": {
+    // Class groups are defined here
+  },
+  "conflictingClassGroups": {
+    // Conflicts between class groups are defined here
+  },
+  "conflictingClassGroupModifiers": {
+    // Conflicts between postfix modifier of a class group and another class group are defined here
+  },
+  "orderSensitiveModifiers": [
+    // Modifiers whose order among multiple modifiers should be preserved because their order
+    // changes which element gets targeted.
+  ]
+}
+```
 
 ## How it Works
 `@meltdownjs/cn` internally utilizes `clsx` to construct an array of class names and then uses `tailwind-merge` to merge any conflicting classes. This ensures that the resulting string of class names is optimized and does not contain redundant or conflicting styles.
