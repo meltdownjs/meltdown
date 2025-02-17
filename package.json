@@ -2,10 +2,12 @@
   "name": "@meltdownjs",
   "private": "true",
   "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "scripts": {
-    "publish": "bunx workspaces-publish --token $NPM_TOKEN"
+    "publish": "bunx workspaces-publish --token $NPM_TOKEN",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11"
   }
 }
