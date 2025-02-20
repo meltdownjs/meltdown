@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/meltdownjs/meltdown/compare/biomejs-config-v1.1.0...biomejs-config-v1.1.1) (2025-02-20)
+
+
+### Bug Fixes
+
+* use `vite-plugin-dts` correctly ([#32](https://github.com/meltdownjs/meltdown/issues/32)) ([5d8a253](https://github.com/meltdownjs/meltdown/commit/5d8a2530597a54abaad7bf4651e4023e7d0af3df))
+
 ## [1.1.0](https://github.com/meltdownjs/meltdown/compare/biomejs-config-v1.0.0...biomejs-config-v1.1.0) (2025-02-20)
 
 
