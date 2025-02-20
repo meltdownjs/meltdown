@@ -32,9 +32,11 @@
   "bugs": {
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

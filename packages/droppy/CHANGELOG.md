@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/meltdownjs/meltdown/compare/droppy-v1.1.0...droppy-v1.2.0) (2025-02-20)
+
+
+### Features
+
+* add husky support ([#28](https://github.com/meltdownjs/meltdown/issues/28)) ([13be155](https://github.com/meltdownjs/meltdown/commit/13be155b1ff6a3a83bb6a97353aac491834d606a))
+* update dependencies ([#31](https://github.com/meltdownjs/meltdown/issues/31)) ([cfecd9c](https://github.com/meltdownjs/meltdown/commit/cfecd9ce0a608de05baca5e90b98e7d76a78ca5b))
+
 ## [1.1.0](https://github.com/meltdownjs/meltdown/compare/droppy-v1.0.1...droppy-v1.1.0) (2024-05-21)
 
 
