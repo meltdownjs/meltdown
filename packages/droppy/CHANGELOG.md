@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/meltdownjs/meltdown/compare/droppy-v1.2.0...droppy-v1.2.1) (2025-02-20)
+
+
+### Bug Fixes
+
+* use `vite-plugin-dts` correctly ([#32](https://github.com/meltdownjs/meltdown/issues/32)) ([5d8a253](https://github.com/meltdownjs/meltdown/commit/5d8a2530597a54abaad7bf4651e4023e7d0af3df))
+
 ## [1.2.0](https://github.com/meltdownjs/meltdown/compare/droppy-v1.1.0...droppy-v1.2.0) (2025-02-20)
 
 
