@@ -30,10 +30,8 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      include: ['src'],
-      outDir: './dist',
-      copyDtsFiles: true,
       rollupTypes: true,
+      tsconfigPath: './tsconfig.app.json',
     }),
   ],
 })

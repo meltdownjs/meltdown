@@ -1,10 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.7.2/schema.json",
   "files": {
-    "ignore": [
-      "dist",
-      "node_modules"
-    ]
+    "ignore": ["dist", "node_modules"]
   },
   "formatter": {
     "enabled": true,
@@ -108,12 +105,7 @@
   },
   "overrides": [
     {
-      "include": [
-        "*.ts",
-        "*.tsx",
-        "*.mts",
-        "*.cts"
-      ],
+      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
       "linter": {
         "rules": {
           "correctness": {
