@@ -9,7 +9,6 @@ import type {
 import type { VirtualItem } from '@tanstack/react-virtual'
 import { DebouncedFunc } from 'lodash-es'
 import type {
-  ButtonHTMLAttributes,
   CSSProperties,
   Dispatch,
   HTMLAttributes,
@@ -107,7 +106,7 @@ export type UseDropDownListArgs = {
   ariaRole?: 'select' | 'combobox'
 }
 
-type UseDropDownListReturn = {
+export type UseDropDownListReturn = {
   isOpen: boolean
   setIsOpen: Dispatch<SetStateAction<boolean>>
   refs: ExtendedRefs<ReferenceType>
@@ -133,7 +132,7 @@ export type UseInifiteQueryResultVirtualizerArgs<TResultItem> = {
   virtualizerOptions?: VirtualizerOptions
 }
 
-type UseInifiteQueryResultVirtualizerReturn<
+export type UseInifiteQueryResultVirtualizerReturn<
   TScrollElement extends HTMLElement,
 > = {
   virtualItems: VirtualItem[]
@@ -150,7 +149,10 @@ export type UseInfiniteSelectArgs<TResult, TResultItem> = {
   ariaRole?: 'combobox'
 } & BaseUseSelectArgs<TResultItem>
 
-type UseInfiniteSelectReturn<TScrollElement extends HTMLElement, TOption> = {
+export type UseInfiniteSelectReturn<
+  TScrollElement extends HTMLElement,
+  TOption,
+> = {
   options: TOption[]
 } & BaseUseSelectReturn<TScrollElement, TOption>
 
@@ -180,7 +182,7 @@ export type UseInfiniteMultiSelectArgs<TResult, TResultItem> = {
   ariaRole?: 'combobox'
 } & BaseUseMultiSelectArgs<TResultItem>
 
-type UseInfiniteMultiSelectReturn<
+export type UseInfiniteMultiSelectReturn<
   TScrollElement extends HTMLElement,
   TOption,
 > = {

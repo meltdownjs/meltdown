@@ -27,9 +27,7 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      include: ['src'],
-      outDir: './dist',
-      copyDtsFiles: true,
+      tsconfigPath: './tsconfig.app.json',
       rollupTypes: true,
     }),
   ],
