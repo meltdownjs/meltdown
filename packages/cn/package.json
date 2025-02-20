@@ -21,7 +21,9 @@
     "url": "https://github.com/meltdownjs/meltdown/issues"
   },
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -51,5 +53,5 @@
     "vitest": "^3.0.6",
     "vite-plugin-dts": "^4.5.0"
   },
-  "version": "1.1.1"
+  "version": "1.2.0"
 }

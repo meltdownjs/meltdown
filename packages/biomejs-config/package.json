@@ -20,11 +20,13 @@
   ],
   "type": "module",
   "main": "biome.json",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "exports": {
     ".": "./biome.json"
   },
-  "files": ["biome.json"],
+  "files": [
+    "biome.json"
+  ],
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"
   },
